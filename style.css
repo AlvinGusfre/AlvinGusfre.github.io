@@ -1,0 +1,260 @@
+body, html {
+    margin: 0;
+    background-color: #ffb5f3;
+    font-family:  Cambria, Cochin, Georgia, serif;
+    color: #2d2d2d;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #ff54e3;
+  color: white;
+  font-size: 30px;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #ff54e3;
+  color: white;
+  font-size: 30px;
+}
+
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+    
+.container {
+  width: 500px;
+  margin: 20px auto 0 auto;
+  background-color: #E288A0;
+  background-color: rgba(255,255,255,0.5);
+  
+  /*border: 3px solid #B71F45;*/
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.personcontainer {
+    width: 80%; /* Setter hvor bredt div elementet skal være. */
+    margin: 0 auto; /*Sentrerer div elementet. */
+    padding-top: 10%; /* Utvider elementet på toppen. */
+}
+
+.image {
+    position: relative;
+    max-width: 30%;
+    float: right;
+    padding-left: 5px;
+    margin: 0 auto;
+}
+
+.styledbutton:link, .styledbutton:visited {
+    font-family: Poppins, sans-serif;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: #E288A0;
+    border: 1px rgb(226, 113, 143);
+    padding: 5px;
+}
+
+.styledbutton:hover {
+    background-color: rgb(226, 113, 143);
+}
+
+.pdf {
+    margin-top: 5%;
+}
+
+.right {
+    float: right;
+}
+
+.pdfview {
+    width: 100%;
+    margin-top: 2%;
+    height: 80vh;
+    border: none;
+}
+
+.image-header {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto; /* Sentrerer div elementet. */
+    min-height: 100vh; /* For å passe på at hele siden blir grå/hvit */
+    background-color: white; /* Setter bakgrunnen til div elementet hvitt. */
+}
+
+.spanner {
+    color: red; /* farge på et element som thomas bruker. */
+}
+
+.logo {
+    padding-right: 10px;
+}
+
+.table, th, td {
+    border: 0.5px solid black;
+    padding: 10px 30px;
+    
+}
+
+.table-header {
+    background-color:#95A5A6;
+     
+}
+.table-body {
+    /*background-color: ;*/
+}
+
+/*for telefoner*/
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: auto;
+    }
+
+    .personcontainer {
+        width: 95%;
+    }
+
+    .image-header {
+        min-width: 100%;
+    } 
+
+    .image {
+        float: none;
+        margin: 0 auto;
+        min-width: 99%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 5em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.5em;
+    }
+}
+ 
+/* navigationbar, må være en bedre måte å linke til navigationbar på flere sider?  */
+/** {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*/
+nav {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ff54e3;
+    font-family: 'Poppins', sans-serif;  
+}
+/* sticky nav-bar? */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 60px;
+}
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    margin-right: 1%;
+    
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 14px 15px;
+    
+}
+.nav-links a:hover {
+    background-color: #ff8cec;
+        color: #ffffff;
+}
+.dropdown {
+  float: left; 
+    overflow: hidden;
+    
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: red;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff8cec;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover, .dropbtn {
+    color: white;
+}
+.dropdown-content a:hover {
+  background-color: #ff54e3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
